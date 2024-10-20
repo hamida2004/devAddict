@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Nav from "../components/Nav";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
-import { ThemeContext, ThemeProvider } from "../hooks/useContext/useContext";
+import { ThemeContext} from "../hooks/useContext/useContext";
 
 function Home() {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);

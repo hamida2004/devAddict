@@ -39,9 +39,6 @@ function Main() {
     font-weight: 200;
     margin-bottom: 80px;
   `;
-  const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-  };
   return (
     
     <>
