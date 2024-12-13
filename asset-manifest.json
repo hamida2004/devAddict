@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/devAddict/static/css/main.0f1e673b.css",
-    "main.js": "/devAddict/static/js/main.ac1ad086.js",
+    "main.js": "/devAddict/static/js/main.ae0df4f1.js",
     "static/media/img.png": "/devAddict/static/media/img.da1eb7f18df187eb7c26.png",
     "static/media/img1.png": "/devAddict/static/media/img1.c7622caa0dbe0d1abab1.png",
+    "static/media/hamida.jpg": "/devAddict/static/media/hamida.4a06cf7d6b56b3515d32.jpg",
+    "static/media/nessrine.jpg": "/devAddict/static/media/nessrine.9334c652cacb9ff3fa93.jpg",
     "static/media/img2.png": "/devAddict/static/media/img2.cf7532a5cf3ec9002398.png",
     "index.html": "/devAddict/index.html",
     "main.0f1e673b.css.map": "/devAddict/static/css/main.0f1e673b.css.map",
-    "main.ac1ad086.js.map": "/devAddict/static/js/main.ac1ad086.js.map"
+    "main.ae0df4f1.js.map": "/devAddict/static/js/main.ae0df4f1.js.map"
   },
   "entrypoints": [
     "static/css/main.0f1e673b.css",
-    "static/js/main.ac1ad086.js"
+    "static/js/main.ae0df4f1.js"
   ]
 }
