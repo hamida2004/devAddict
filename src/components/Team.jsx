@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/images/logoWhite.png";
+import hamida from "../assets/images/hamida.jpg";
+import nessrine from "../assets/images/nessrine.jpg";
 import { Link } from "react-router-dom";
 import Name from "./Name";
 function Team() {
@@ -48,8 +50,9 @@ function Team() {
   const Image = styled.img`
     width: 100%;
     height: 100%;
+    border-radius: 16px;
   `;
-  const StyledLink = styled(Link)`
+  const StyledLink = styled.a`
     width: 32%;
     height: 56vh;
     transition: transform 0.3s ease;
@@ -72,16 +75,16 @@ function Team() {
           marginTop: 80,
         }}
       >
-        <StyledLink>
+        <StyledLink href="https://hamida2004.github.io/Portfolio/">
           <DivLeft>
-            <Name name={"member01"} />
-            <Image src={logo} />
+            <Name name={"MEHDA Nesrine"} />
+            <Image src={nessrine} />
           </DivLeft>
         </StyledLink>
-        <StyledLink>
+        <StyledLink href="https://hamida2004.github.io/Portfolio/">
           <DivRight>
-            <Name name={"member02"} />
-            <Image src={logo} />
+            <Name name={"DADDA Hamida"} />
+            <Image src={hamida} />
           </DivRight>
         </StyledLink>
       </div>

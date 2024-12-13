@@ -6,7 +6,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <Router>
+    <Router basename="devAddict">
       <ThemeProvider>
         <Routes>
           <Route path="/" element={<Home />} />

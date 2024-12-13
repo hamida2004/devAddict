@@ -40,7 +40,6 @@ function Main() {
     margin-bottom: 80px;
   `;
   return (
-    
     <>
       <Section>
         <Div
@@ -95,6 +94,10 @@ function Main() {
       <Section
         style={{
           height: "60vh",
+          width: "100%",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          marginBottom: 120,
         }}
       >
         <img
@@ -119,6 +122,7 @@ function Main() {
             Transform your ideas to reality
           </P>
         </Div>
+        
       </Section>
     </>
   );

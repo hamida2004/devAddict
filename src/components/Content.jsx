@@ -4,14 +4,15 @@ import Team from "./Team";
 import Projects from "./Projects";
 import Testemonials from "./Testemonials";
 function Content() {
-
-  return <>
-  <Main />
-  <Team />
-  <Projects />
-  {/* //projects //testimonials // proceed */}
-  <Testemonials />
-  </>;
+  return (
+    <>
+      <Main />
+      <Team />
+      <Projects />
+      {/* //projects //testimonials // proceed */}
+      <Testemonials />
+    </>
+  );
 }
 
 export default Content;

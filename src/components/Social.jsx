@@ -31,14 +31,14 @@ function Social() {
       <StyledLink target="_blank">
         <FaFacebook size={32} />
       </StyledLink>
-      <StyledLink target="_blank">
+      <StyledLink target="_blank" to={'https://www.instagram.com/devaddict2024/#'}>
         <FaInstagram size={32} />
       </StyledLink>
       <StyledLink target="_blank" to={"https://x.com/Addict2000Dev"}>
         <FaTwitter size={32} />
       </StyledLink>
 
-      <StyledLink target="_blank">
+      <StyledLink target="_blank" to={'https://www.tiktok.com/@dev2000addict'}>
         <FaTiktok size={32} />
       </StyledLink>
     </Div>
