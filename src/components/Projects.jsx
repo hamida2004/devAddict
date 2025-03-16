@@ -89,65 +89,76 @@ function Projects() {
       <Img2 src={img} />
       <P>Our projects </P>
       {/* Design Projects */}
-      <Part title="Design">
-        <Div>
-          {projects
-            .filter((project) => project.type === "Design")
-            .slice(0, 3)
-            .map((project, index) => {
-              return (
-                <StyledLink key={index}>
-                  <Project
-                    name={project.name}
-                    photo={logo}
-                    link={project.github}
-                  />
-                </StyledLink>
-              );
-            })}
-        </Div>
-        <Button text={"View More"} handleClick={()=> navigate('/projects/design')} />
-      </Part>
+      {
+        projects
+          .filter((project) => project.type === "Design").length > 0 &&
+        <Part title="Design">
+          <Div>
+            {projects
+              .filter((project) => project.type === "Design")
+              .slice(0, 3)
+              .map((project, index) => {
+                return (
+                  <StyledLink key={index}>
+                    <Project
+                      name={project.name}
+                      photo={project.image}
+                      link={project.url}
+                    />
+                  </StyledLink>
+                );
+              })}
+          </Div>
+          <Button text={"View More"} handleClick={() => navigate('/projects/design')} />
+        </Part>}
       {/* Mobile Apps Projects */}
-      <Part title="Mobile Apps">
-        <Div>
-          {projects
-            .filter((project) => project.type === "Mobile App")
-            .slice(0, 3)
-            .map((project, index) => {
-              return (
-                <StyledLink key={index}>
-                  <Project
-                    name={project.name}
-                    photo={logo}
-                    link={project.github}
-                  />
-                </StyledLink>
-              );
-            })}
-        </Div>
-        <Button text={"View More"} handleClick={()=> navigate('/projects/mobile')}/>
-      </Part>
+      {
+        projects
+          .filter((project) => project.type === "Mobile App").length > 0 &&
+        <Part title="Mobile Apps">
+          <Div>
+            {
+              projects
+                .filter((project) => project.type === "Mobile App")
+                .slice(0, 3)
+                .map((project, index) => {
+                  return (
+                    <StyledLink key={index}>
+                      <Project
+                        name={project.name}
+                        photo={project.image}
+                        link={project.url}
+                      />
+                    </StyledLink>
+                  );
+                })}
+          </Div>
+          <Button text={"View More"} handleClick={() => navigate('/projects/mobile')} />
+        </Part>}
       {/* Web Apps Projects */}
-      <Part title="Web Apps">
-        <Div>
-          {projects
-            .filter((project) => project.type === "Web App")
-            .slice(0, 3)
-            .map((project, index) => {
-              return (
-                <StyledLink key={index}>
-                  <Project
-                    name={project.name}
-                    photo={logo}
-                    link={project.github}
-                  />
-                </StyledLink>
-              );
-            })}
-        </Div>
-        <Button text={"View More"} handleClick={()=> navigate('/projects/web')}/>
-      </Part>
+      {
+        projects
+          .filter((project) => project.type === "Web App").length > 0 &&
+        <Part title="Web Apps">
+          <Div>
+            {
+              projects
+                .filter((project) => project.type === "Web App")
+                .slice(0, 3)
+                .map((project, index) => {
+                  return (
+                    <StyledLink key={index}>
+                      <Project
+                        name={project.name}
+                        photo={project.image}
+                        link={project.url}
+                      />
+                    </StyledLink>
+                  );
+                })}
+          </Div>
+          <Button text={"View More"} handleClick={() => navigate('/projects/web')} />
+        </Part>}
     </Section>
   );
 }

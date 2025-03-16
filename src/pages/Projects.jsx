@@ -1,4 +1,4 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import Nav from "../components/Nav";
 import { ThemeContext } from "../hooks/useContext/useContext";
 import styled from "styled-components";
@@ -58,8 +58,8 @@ function Projects() {
               <StyledLink key={index}>
                 <Project
                   name={project.name}
-                  photo={logo}
-                  link={project.github}
+                  photo={project.image}
+                  link={project.url}
                 />
               </StyledLink>
             );
