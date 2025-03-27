@@ -22,7 +22,7 @@ const Section = styled.section`
 
   @media (max-width: 768px) {
   padding: 40px;
-  
+
   }
 `;
 const Img = styled.img`
@@ -56,7 +56,7 @@ function Footer() {
         <Img src={code} />
       </Section>
       <FooterDiv>
-        <p>copyright2024</p>
+        <p>copyright{new Date().getFullYear()}</p>
       </FooterDiv>
     </>
   );
