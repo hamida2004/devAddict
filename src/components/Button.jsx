@@ -14,7 +14,7 @@ function Button({ text , handleClick}) {
   }
 `;
   const GradientButton = styled.button`
-  
+    width: fit-content; /* Set width to fit content */
     padding: 8px 24px; /* Button padding */
     font-size: 1.6rem; /* Font size */
     color: white; /* Text color */
