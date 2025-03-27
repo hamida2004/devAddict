@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/devAddict/static/css/main.0f1e673b.css",
-    "main.js": "/devAddict/static/js/main.35ad323c.js",
+    "main.js": "/devAddict/static/js/main.26c69415.js",
     "static/media/musalah.png": "/devAddict/static/media/musalah.c51830e3b9ca8e0c0053.png",
     "static/media/img.png": "/devAddict/static/media/img.da1eb7f18df187eb7c26.png",
     "static/media/img1.png": "/devAddict/static/media/img1.c7622caa0dbe0d1abab1.png",
@@ -10,10 +10,10 @@
     "static/media/img2.png": "/devAddict/static/media/img2.cf7532a5cf3ec9002398.png",
     "index.html": "/devAddict/index.html",
     "main.0f1e673b.css.map": "/devAddict/static/css/main.0f1e673b.css.map",
-    "main.35ad323c.js.map": "/devAddict/static/js/main.35ad323c.js.map"
+    "main.26c69415.js.map": "/devAddict/static/js/main.26c69415.js.map"
   },
   "entrypoints": [
     "static/css/main.0f1e673b.css",
-    "static/js/main.35ad323c.js"
+    "static/js/main.26c69415.js"
   ]
 }
