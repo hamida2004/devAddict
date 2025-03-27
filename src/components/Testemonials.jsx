@@ -14,6 +14,14 @@ const Section = styled.section`
   height: 80vh;
   margin: 120px 0px;
 
+  @media (max-width: 768px) {
+  flex-direction: column;
+        padding: 40px;
+        margin: 0px;
+  }
+
+
+
 `;
 const P = styled.p`
   font-size: 2.4rem;
@@ -21,6 +29,10 @@ const P = styled.p`
   font-weight: 200;
   margin-bottom: 16px;
   margin-left: 120px;
+
+  @media (max-width: 768px) {
+  margin:0px
+  }
 `;
 const Div = styled.div`
   height: 100%;
@@ -29,11 +41,17 @@ const Div = styled.div`
   padding: 40px;
   letter-spacing: 4px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
 `;
 
 const Img = styled.img`
 height: 80%;
+
+@media (max-width: 768px) {
+height: 20%;
+width: 20%;
+}
 `;
 function Testemonials() {
   return (

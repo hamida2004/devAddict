@@ -2,7 +2,6 @@ import React from "react";
 import { projects } from "../assets/data/data";
 import Project from "./Project";
 import styled from "styled-components";
-import logo from "../assets/images/logoWhite.png";
 import img2 from "../assets/images/img2.png";
 import img from "../assets/images/img.png";
 import Button from "./Button";
@@ -15,12 +14,20 @@ const Section = styled.section`
   padding: 20px 120px;
   position: relative;
   flex-direction: column;
+
+   @media (max-width: 768px) {
+            padding: 40px;
+            margin: 80px 0px;}
 `;
 const P = styled.p`
   font-size: 2.4rem;
   letter-spacing: 2px;
   font-weight: 200;
   margin-bottom: 16px;
+
+   @media (max-width: 768px) {
+          
+   }
 `;
 
 const StyledLink = styled.div`
@@ -50,7 +57,7 @@ const Part = styled(Div)`
   &::before {
     content: "${(props) => props.title}";
     display: flex;
-    font-size:1.8;
+    font-size:1.8rem;
     align-items: center;
     justify-content: center;
     width: 40vh;
@@ -66,6 +73,13 @@ const Part = styled(Div)`
     z-index: 999;
     border-radius:16px;
     box-shadow: 1px 1px 5px rgba(146, 36, 255, 0.25);
+
+    @media (max-width: 768px) {
+    font-size:1.4rem;
+    width: 30vh;
+    margin-top: 40px;
+    
+    }
 `;
 
 const Img = styled.img`

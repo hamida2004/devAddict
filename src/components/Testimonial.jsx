@@ -18,6 +18,11 @@ function Testimonial({ user, content, username }) {
     &:hover {
       transform: scale(1.1, 1.1);
     }
+
+    @media (max-width: 768px) {
+    height: fit-content;
+
+    }
   `;
   const Content = styled.p`
     width: 100%;

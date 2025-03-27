@@ -20,12 +20,18 @@ const NavBar = styled.div`
 const Image = styled.img`
   width: 40px;
   height: 40px;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 const Button = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
+  
 `;
 
 // &:hover { }

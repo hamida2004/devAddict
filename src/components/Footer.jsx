@@ -19,6 +19,11 @@ const Section = styled.section`
   padding: 20px 120px;
   position: relative;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+  padding: 40px;
+  
+  }
 `;
 const Img = styled.img`
   width: 60%;

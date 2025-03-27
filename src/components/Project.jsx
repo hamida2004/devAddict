@@ -16,6 +16,11 @@ function Project({ name, photo, link }) {
     margin: 20px;
     overflow: visible;
     z-index: 1; /* Set a higher z-index for the section */
+
+     @media (max-width: 768px) {
+     height: 30vh;         
+     width: 30vw;
+     }
   `;
 
   const Shadow = styled.div`
@@ -27,6 +32,11 @@ function Project({ name, photo, link }) {
     border-radius:16px;
     z-index: 0;
     /* Set a lower z-index for the shadow */
+
+    @media (max-width: 768px) {
+    height: 30vh;
+    width: 30vw;
+    }
   `;
 
   const Image = styled.img`

@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/images/logoWhite.png";
 import hamida from "../assets/images/hamida.jpg";
 import nessrine from "../assets/images/nessrine.jpg";
-import { Link } from "react-router-dom";
 import Name from "./Name";
 function Team() {
   const Section = styled.section`
@@ -15,6 +13,9 @@ function Team() {
     height: 100vh;
     position: relative;
     flex-direction: column;
+         @media (max-width: 768px) {
+          padding: 40px;
+          margin: 80px 0px;}
   `;
   const P = styled.p`
     font-size: 2.4rem;
@@ -34,6 +35,11 @@ function Team() {
     transform: rotateX(16deg) rotateY(24deg);
     position: relative;
     transform-style: preserve-3d;
+
+    @media (max-width: 768px) {
+    transform: rotateX(0deg) rotateY(0deg);
+    height: 60%;
+    }
   `;
   const DivRight = styled.div`
     width: 100%;
@@ -46,6 +52,11 @@ function Team() {
     justify-content: center;
     transform: rotateX(-16deg) rotateY(24deg);
     transform-style: preserve-3d;
+
+    @media (max-width: 768px) {
+    transform: rotateX(0deg) rotateY(0deg);
+    height: 60%;
+    }
   `;
   const Image = styled.img`
     width: 100%;
@@ -56,24 +67,33 @@ function Team() {
     width: 32%;
     height: 56vh;
     transition: transform 0.3s ease;
+    @media (max-width: 768px) {
+    width: 40%;
+    }
     &:hover {
       transform: scale(1.1, 1.1);
     }
+      @media (max-width: 768px) {
+      height: 40vh;
+      }
   `;
+  const Div = styled.div`
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+
+    @media (max-width: 768px) {
+    gap:40px}
+  `
   return (
     <Section>
       <P>Our team members </P>
       <h4>we are enthusiast to build your interfaces</h4>
-      <div
-        style={{
-          height: "fit-content",
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 20,
-          marginTop: 80,
-        }}
+      <Div
       >
         <StyledLink href="https://hamida2004.github.io/Portfolio/">
           <DivLeft>
@@ -87,7 +107,7 @@ function Team() {
             <Image src={hamida} />
           </DivRight>
         </StyledLink>
-      </div>
+      </Div>
     </Section>
   );
 }

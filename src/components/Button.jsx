@@ -14,7 +14,7 @@ function Button({ text , handleClick}) {
   }
 `;
   const GradientButton = styled.button`
-    width: 200px;
+  
     padding: 8px 24px; /* Button padding */
     font-size: 1.6rem; /* Font size */
     color: white; /* Text color */
@@ -30,6 +30,12 @@ function Button({ text , handleClick}) {
     animation: ${gradientAnimation} 5s ease infinite; /* Apply animation */
     transition: transform 0.3s ease; /* Smooth transform transition */
     font-size: 1.8 rem;
+
+  @media (max-width: 768px) {
+  font-size: 1rem;
+  padding: 8px 16px;
+  }
+
     &:hover {
       transform: scale(1.05); /* Slightly scale up on hover */
     }
